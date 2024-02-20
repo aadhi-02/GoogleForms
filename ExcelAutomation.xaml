@@ -1,0 +1,182 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ExcelAutomation" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="854,2452" sap2010:WorkflowViewState.IdRef="ExcelAutomation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ExcelAutomation" sap:VirtualizedContainerService.HintSize="568,2387.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="C:\Users\ramachandran.a\OneDrive - ascendion\Desktop\Googleform.xlsx" Name="FilePath" />
+      <Variable x:TypeArguments="sd:DataTable" Name="TestData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[TestData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="506,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="[FilePath]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Excel data" sap:VirtualizedContainerService.HintSize="506,2148.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="22dfe036-8135-4ea8-939e-b4305a7c370b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,1929.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TestData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,1686.6666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1496.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="22dfe036-8135-4ea8-939e-b4305a7c370b" Text="[CurrentRow(&quot;FullName&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf8ZF9jBoUBk4AN8eeO-tajj-R1x5KImTagCu_SHsAHQLyDrA/viewform" CvElementArea="467, 628, 918, 47" CvType="InputBox" DesignTimeRectangle="487, 638, 886, 36" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='KHxj8b tL9Q4c' aaname='' /&gt;" Guid="196db4d2-84aa-4172-b024-dafa891ae2bc" InformativeScreenshot="8e9cb64cf95ccb36d57f5f450274510f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Excel data' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="22dfe036-8135-4ea8-939e-b4305a7c370b" Text="[CurrentRow(&quot;PhoneNumber&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf8ZF9jBoUBk4AN8eeO-tajj-R1x5KImTagCu_SHsAHQLyDrA/viewform" CvElementArea="472, 849, 920, 48" CvType="InputBox" DesignTimeRectangle="487, 859, 886, 36" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl aria-labelledby='i5' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i5' tag='TEXTAREA' type='' class='KHxj8b tL9Q4c' aaname='' /&gt;" Guid="1f72eb89-fa52-49a2-ae83-d48ead21fc67" InformativeScreenshot="a6aad65defb968a1801194b76bafc9b4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Excel data' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="22dfe036-8135-4ea8-939e-b4305a7c370b" Text="[CurrentRow(&quot;MailId&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf8ZF9jBoUBk4AN8eeO-tajj-R1x5KImTagCu_SHsAHQLyDrA/viewform" CvElementArea="467, 413, 920, 47" CvType="InputBox" DesignTimeRectangle="487, 422, 886, 36" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl aria-labelledby='i9' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i9' tag='TEXTAREA' type='' class='KHxj8b tL9Q4c' aaname='' /&gt;" Guid="f62b61c1-56f3-4791-8a52-a179f4ae07f4" InformativeScreenshot="235f35c283dfb748ba8efc55f428530f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Excel data' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="22dfe036-8135-4ea8-939e-b4305a7c370b" Text="[CurrentRow(&quot;Position&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf8ZF9jBoUBk4AN8eeO-tajj-R1x5KImTagCu_SHsAHQLyDrA/viewform" CvElementArea="474, 634, 916, 47" CvType="InputBox" DesignTimeRectangle="487, 643, 886, 36" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl aria-labelledby='i13' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i13' tag='TEXTAREA' type='' class='KHxj8b tL9Q4c' aaname='' /&gt;" Guid="06723adb-c665-44a2-bc54-4906d81efad9" InformativeScreenshot="912e8f4ec49038b7c7008c8e70d81cc5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Excel data' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="10" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="22dfe036-8135-4ea8-939e-b4305a7c370b" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf8ZF9jBoUBk4AN8eeO-tajj-R1x5KImTagCu_SHsAHQLyDrA/viewform" CvElementArea="448, 743, 146, 58" CvTextArea="483, 762, 75, 19" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="486, 746, 71, 54" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl aaname='Submit' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' tag='SPAN' type='' class='NPEfkd RveJvd snByac' check:innerText='Submit' /&gt;" Guid="66db6b20-a43e-466f-8bb9-4ef5544f7381" InformativeScreenshot="a93dc139f22afcdd7ed7543cde8e0905.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Excel data' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="448, 743, 146, 58" CvTextArea="483, 762, 75, 19" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="450, 746, 143, 54" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl aria-role='button' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' type='' tag='DIV' class='uArJ5e UQuaGc Y5sE8d VkkpIf QvWxOd' aaname='' check:innerText='Submit' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit another response'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="22dfe036-8135-4ea8-939e-b4305a7c370b" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf8ZF9jBoUBk4AN8eeO-tajj-R1x5KImTagCu_SHsAHQLyDrA/formResponse" CvTextArea="496, 424, 237, 24" CvTextArgument="Submit another response" CvType="Text" DesignTimeRectangle="498, 424, 234, 25" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Submit another response'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='' aaname='Submit another response' check:innerText='Submit another response' /&gt;" Guid="eb6d18ed-bc6d-4960-bd68-1c0c4f8a68ae" InformativeScreenshot="e170a18303e861e05e7c79a72f4aaf60.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Excel data' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="410,86.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Response submitted successfully&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="2962d018678cbdab6a436b0dae2d02c2.jpg" Selector="&lt;html app='msedge.exe' title='Excel data' /&gt;" Title="Excel data" Url="https://docs.google.com/forms/d/e/1FAIpQLSf8ZF9jBoUBk4AN8eeO-tajj-R1x5KImTagCu_SHsAHQLyDrA/viewform" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
